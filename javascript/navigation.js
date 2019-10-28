@@ -2,20 +2,32 @@ window.gs = !window.gs ? {} : window.gs;
 
 (function(gs, window, document, $){
 
+    var mobileMenuBtn;
+    var mobileNav;
+    var menuShadow;
+    var hideNavBtn;
+
+    function handleOpenMenuClick(){
+        menuShadow.show();
+        mobileNav.addClass('open');
+    }
+
+    function handleHideMenuClick(){
+        menuShadow.hide();
+        mobileNav.removeClass('open');
+    }
+
+
     function initNavigation(){
-        var currentUrl = document.location.pathname;
-        var links = $('#main-nav a');
-        var link;
-        if(links.length > 0) {
-            links.each(function(i){
-                link = links.eq(i);
-                if(link.attr('href') === currentUrl){
-                    link.attr('data-selected', 'true');
-                } else {
-                    link.attr('data-selected', 'false');
-                }
-            })
-        }
+        
+        mobileMenuBtn = $("#mobile-menu-button");
+        mobileNav = $("#top-nav");
+        menuShadow = $("#top-mobile-menu-shadow");
+        hideNavBtn = $('#btn-hide-nave');
+
+        mobileMenuBtn.click(handleOpenMenuClick);
+        hideNavBtn.click(handleHideMenuClick);
+
     }
 
     gs.navigation = {
