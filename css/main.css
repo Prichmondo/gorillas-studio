@@ -61,7 +61,29 @@ h1 {
 }
 
 .logo-main {
-    max-width: 100%;    
+    max-width: 100%;     
+}
+
+.main-header .burger-icon {
+    float: right;
+}
+
+.burger-icon {
+    height: 40px;
+    width: 40px;
+    padding: 5px 2px;
+}
+
+.burger-icon-el {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.burger-icon-el:last-child {
+    margin-bottom: 0;
 }
 
 .main-header nav {
