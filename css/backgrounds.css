@@ -1,0 +1,33 @@
+.stripes {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;    
+}
+
+.stripes-home {
+    height: 530px;
+    background: linear-gradient(90deg, #031b5e,#0573b0);
+}
+
+.stripe {
+    height: 80px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.stripe1-home {
+    background: linear-gradient(90deg, #022567,#055f9d);
+}
+
+.stripe2-home {
+    bottom: 0;
+    left: 50%;
+    background: linear-gradient(90deg, #04619f,#2a9ca7);
+}

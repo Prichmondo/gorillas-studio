@@ -1,0 +1,9 @@
+.home-intro h1 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.home-intro h1 strong {
+    color: #8eff82;
+    font-weight: 700;
+}

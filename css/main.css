@@ -6,3 +6,144 @@
     padding: 10px;
     box-sizing: border-box;
 }
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+body, a, a:visited, a:active, a:hover {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    font-size: 28px;
+    font-size: 1.75em
+}
+
+/**********************************************************************/
+/******************************* LAYOUT *******************************/
+/**********************************************************************/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/**********************************************************************/
+/******************************* HEADER *******************************/
+/**********************************************************************/
+
+.main-header {
+    position: relative;
+    z-index: 2;
+}
+
+.main-header .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo-main {
+    max-width: 100%;    
+}
+
+.main-header nav {
+    display: none;
+}
+
+.main-header nav ul {
+    text-align: right;
+}
+
+.main-header nav ul:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.main-header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.main-header nav a {
+    display: block;
+    padding: 20px 5px;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+}
+.main-header nav a[data-selected="true"],
+.main-header nav a:hover {
+    text-decoration: none;
+    border-color: #222;
+}
+
+/**********************************************************************/
+/******************************** BODY ********************************/
+/**********************************************************************/
+.page-body {
+    position: relative;
+    z-index: 2;
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+
+.page-body:after {
+    content: '';
+    display: block;
+    height: 100px;
+}
+
+main .container {
+    min-height: 200px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/**********************************************************************/
+/******************************* FOOTER *******************************/
+/**********************************************************************/
+
+footer.main-footer {
+    position: relative;
+    z-index: 2;
+    background-color: #eee;
+    height: 100px;
+}
+
+.main-footer .container {
+    background-color: #ddd;
+}
+
+.main-footer nav ul {
+    text-align: center;
+}
+
+.main-footer nav ul:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.main-footer nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
