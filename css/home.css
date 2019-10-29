@@ -7,3 +7,28 @@
     color: #8eff82;
     font-weight: 700;
 }
+
+.home-visual {
+    overflow: hidden;
+    position: relative;
+    margin: 0 -20px;
+    height: 320px;
+}
+
+.home-visual-recargas,
+.home-visual-webcastle {
+    position: absolute;
+    z-index: 1;
+}
+
+.home-visual-recargas {
+    width: 360px;
+    bottom: 15px;
+    left: -97px;
+}
+
+.home-visual-webcastle {
+    width: 277px;
+    bottom: 75px;
+    right: -54px;
+}
