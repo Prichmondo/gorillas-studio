@@ -40,6 +40,11 @@ p {
     line-height: 22px;
 }
 
+small {
+    font-size: 12px;
+    letter-spacing: -0.2px;
+}
+
 /**********************************************************************/
 /******************************** CORE ********************************/
 /**********************************************************************/
@@ -57,8 +62,16 @@ p {
     clear: both;
 }
 
+.align-center {
+    margin: 0 auto;
+}
+
 .stack > * {
     margin-bottom: 30px;
+}
+
+.stack > *:last-child {
+    margin-bottom: 0;
 }
 
 .text-center {
@@ -111,6 +124,21 @@ p {
     max-width: 100%;
     border: none;
     font-weight: 700;
+}
+
+.icon {
+    border-radius: 50%;
+    background-color: #8eff82;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    fill: #fff;
+    padding: 15px;
+}
+
+.icon svg {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /**********************************************************************/
@@ -256,24 +284,35 @@ main .container {
 footer.main-footer {
     position: relative;
     background-color: #eee;
-    height: 100px;
 }
 
 .main-footer .container {
-    background-color: #ddd;
+    background-color: #eceaea;
+    border-top: 1px solid #d0d0d0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.main-footer nav ul {
-    text-align: center;
+.main-footer img {
+    max-width: 100%;
+    width: 180px;
 }
 
-.main-footer nav ul:after {
-    content:'';
+.main-footer small {
     display: block;
-    clear: both;
+    width: 100%;
 }
 
-.main-footer nav ul li {
-    display: inline-block;
-    padding: 0 10px;
+.main-footer ul.nav-root > li > a,
+.main-footer ul.nav-root > li > span {
+    font-weight: 700;
+}
+
+.main-footer ul li ul li {
+    padding-top: 5px;
+    color: #757575
+}
+
+.main-footer ul.nav-root > li {
+    margin-bottom: 20px;
 }
