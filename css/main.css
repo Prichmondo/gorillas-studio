@@ -283,14 +283,7 @@ main .container {
 
 footer.main-footer {
     position: relative;
-    background-color: #eee;
-}
-
-.main-footer .container {
-    background-color: #eceaea;
-    border-top: 1px solid #d0d0d0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 50px;
 }
 
 .main-footer img {
@@ -315,4 +308,29 @@ footer.main-footer {
 
 .main-footer ul.nav-root > li {
     margin-bottom: 20px;
+}
+
+.footer-section,
+.footer-section {
+    background-color: #eceaea;
+    border-top: 1px solid #d0d0d0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-stripe {
+    content: '';
+    display: block;
+    background-color: #eceaea;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    position: absolute;
+    bottom: -100%;
+    top: -30px; 
 }
