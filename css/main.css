@@ -104,8 +104,8 @@ small {
 }
 
 .btn {
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 25px;
+    padding: 15px;
 }
 
 .btn-block {
@@ -151,8 +151,8 @@ small {
 }
 
 .main-header .container {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo-main {
