@@ -1,27 +1,6 @@
-.stripes {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    overflow: hidden;
-    -webkit-transform: skewY(-12deg);
-    transform: skewY(-12deg);
-    -webkit-transform-origin: 0;
-    transform-origin: 0;
-    box-sizing: content-box;
-    padding-bottom: 10%;    
-}
-
 .stripes-home {
     height: 530px;
     background: linear-gradient(90deg, #031b5e,#06a0d9);
-}
-
-.stripe {
-    height: 16%;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
 }
 
 .stripe1-home {
@@ -46,11 +25,7 @@
     background: linear-gradient(90deg, transparent,rgba(91, 217, 160, 0.4));
 }
 
-@media (min-width: 576px) {
-    .stripes-home {
-        /* height: 630px; */
-    }
-}
+@media (min-width: 576px) {}
 
 @media (min-width: 768px) {
 
@@ -64,14 +39,6 @@
     }
 }
 
-@media (min-width: 992px) {
-    .stripes-home {
-        /* height: 630px; */
-    }
-}
+@media (min-width: 992px) {}
 
-@media (min-width: 1200px) {
-    .stripes-home {
-        /* height: 525px; */
-    }
-}
+@media (min-width: 1200px) {}

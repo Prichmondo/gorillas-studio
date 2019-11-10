@@ -1,14 +1,3 @@
-.home-intro h1 {
-    color: #fff;
-    font-weight: 300;
-    padding-top: 30px;
-}
-
-.home-intro h1 strong {
-    color: #8eff82;
-    font-weight: 700;
-}
-
 .visual-container { 
     padding: 2% 0 10% 0;
     overflow: hidden;
@@ -165,7 +154,6 @@
 
 @media (min-width: 992px) {
     .home-intro h1 {
-        font-size: 2.7em;
         padding-top: 100px;
     }
 
