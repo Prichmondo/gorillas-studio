@@ -6,16 +6,18 @@
     -webkit-transform: skewY(-12deg);
     transform: skewY(-12deg);
     -webkit-transform-origin: 0;
-    transform-origin: 0;    
+    transform-origin: 0;
+    box-sizing: content-box;
+    padding-bottom: 10%;    
 }
 
 .stripes-home {
     height: 530px;
-    background: linear-gradient(90deg, #031b5e,#0573b0);
+    background: linear-gradient(90deg, #031b5e,#06a0d9);
 }
 
 .stripe {
-    height: 80px;
+    height: 16%;
     display: block;
     position: absolute;
     left: 0;
@@ -28,6 +30,48 @@
 
 .stripe2-home {
     bottom: 0;
-    left: 50%;
-    background: linear-gradient(90deg, #04619f,#2a9ca7);
+    left: 70%;
+    background: linear-gradient(90deg, transparent, rgba(91, 217, 160, 0.7));
+}
+
+.stripe3-home {
+    right:50%;
+    bottom: 0;
+    background: linear-gradient(90deg, #035190, transparent);
+}
+
+.stripe4-home {
+    bottom: 16%;
+    left: 82%;
+    background: linear-gradient(90deg, transparent,rgba(91, 217, 160, 0.4));
+}
+
+@media (min-width: 576px) {
+    .stripes-home {
+        /* height: 630px; */
+    }
+}
+
+@media (min-width: 768px) {
+
+    .stripe1-home {
+        height: 32%;
+        background: linear-gradient(90deg, #032e70,#044e8d);
+    }
+
+    .stripes-home {
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .stripes-home {
+        /* height: 630px; */
+    }
+}
+
+@media (min-width: 1200px) {
+    .stripes-home {
+        /* height: 525px; */
+    }
 }
