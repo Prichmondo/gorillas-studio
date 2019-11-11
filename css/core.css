@@ -44,6 +44,10 @@ h2 {
     font-size: 1.3em;
 }
 
+h3 {
+    color: #a7a7a7;
+}
+
 p {
     line-height: 22px;
 }
@@ -61,13 +65,6 @@ hr {
 /**********************************************************************/
 /******************************** CORE ********************************/
 /**********************************************************************/
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 30px;
-    box-sizing: border-box;
-}
 
 .clear:after {
     content:'';
@@ -184,7 +181,7 @@ hr {
 @media (min-width: 992px) {
     .visible-lg { display: initial }
     .hidden-lg { display: none }
-    .no-gutter-xs {
+    .no-gutter-lg {
         padding-left: 0;
         padding-right: 0;
     }

@@ -4,30 +4,48 @@ window.gs = !window.gs ? {} : window.gs;
 
     var mobileMenuBtn;
     var mobileNav;
-    var menuShadow;
-    var hideNavBtn;
+    var mobileMenuShadow;
+    var mobileHideNavBtn;
+    var menuItems;
 
     function handleOpenMenuClick(){
-        menuShadow.show();
+        mobileMenuShadow.show();
         mobileNav.addClass('open');
     }
 
     function handleHideMenuClick(){
-        menuShadow.hide();
+        mobileMenuShadow.hide();
         mobileNav.removeClass('open');
     }
 
+    function handleMenuHover(el) {
+        const menu = $(el.target).find('ul');
+        // menu.addClass('hover');
+        menu.show();
+    }
+
+    function handleMenuLeave(el) {
+        const menu = $(el.target).find('ul');
+        // menu.removeClass('hover');
+        menu.hide();
+    }
+
+    function initMenu() {
+        menuItems.mouseenter(handleMenuHover);
+        menuItems.mouseleave(handleMenuLeave);
+    }
 
     function initNavigation(){
         
         mobileMenuBtn = $("#mobile-menu-button");
         mobileNav = $("#top-nav");
-        menuShadow = $("#top-mobile-menu-shadow");
-        hideNavBtn = $('#btn-hide-nave');
+        mobileMenuShadow = $("#top-mobile-menu-shadow");
+        mobileHideNavBtn = $('#btn-hide-nave');
+        menuItems = $("#main-nav > ul > li");
 
+        initMenu();
         mobileMenuBtn.click(handleOpenMenuClick);
-        hideNavBtn.click(handleHideMenuClick);
-
+        mobileHideNavBtn.click(handleHideMenuClick);
     }
 
     gs.navigation = {
