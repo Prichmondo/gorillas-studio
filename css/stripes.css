@@ -24,7 +24,7 @@
 
 .stripe1 {
     height: calc(8%*2);    
-    background: linear-gradient(90deg, #022567,#055f9d);
+    background: linear-gradient(90deg, transparent,#032e70);
 }
 
 .stripe2 {
@@ -90,12 +90,11 @@
 @media (min-width: 992px) {
 
     .stripes {
-        height: 400px;
+        height: 350px;
     }
     
     .stripe1 {
         height: 32%;
-        background: linear-gradient(90deg, #055f9d, #022567);
     }
 }
 

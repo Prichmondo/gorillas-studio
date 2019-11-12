@@ -242,6 +242,11 @@ main .container {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+    h1 {
+        font-size: 2.2em;
+        padding-top: 30px;
+    }
+
     /**********************************************************************/
     /********************************* NAV ********************************/
     /**********************************************************************/
@@ -259,26 +264,32 @@ main .container {
         position: relative;
         padding: 15px 20px;
         border-top: none;
+        cursor: pointer;
     }
 
     .main-header nav ul ul {
-        display: none;
-        /* opacity: 0; */
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         background-color: #fff;
         border-radius: 10px;
         min-width: 150px;
         text-align: center;
         margin-top: 10px;
+        -webkit-transition: opacity .4s ease, top .4s ease;
+        transition: opacity .4s ease, top .4s ease;
         -webkit-box-shadow: -0px 8px 22px 0px rgba(0,0,0,0.4);
         -moz-box-shadow: -0px 8px 22px 0px rgba(0,0,0,0.4);
         box-shadow: -0px 8px 22px 0px rgba(0,0,0,0.4);
+        top: calc(100% - 20px);
         left: 50%;
         margin-left: -75px;
     }
 
-    .main-header nav ul li.hover ul {
-        /* opacity: 1; */
+    .main-header nav ul li:hover ul {
+        top: calc(100% - 15px);
+        opacity: 1;
+        visibility: visible;
     }
 
     .main-header nav ul ul:after {
@@ -301,10 +312,13 @@ main .container {
         border-bottom: 1px solid #ccc;
         font-size: 0.8em;
         text-decoration: none;
+        background-color: #fff;
+        -webkit-transition: background-color .4s ease;
+        transition: background-color .4s ease;
     }
 
     .main-header nav ul ul a:hover {
-        background-color: #eceaea;
+        background-color: #c8f5ff;
         text-decoration: none;    
     }
 
@@ -365,12 +379,12 @@ main .container {
 @media (min-width: 992px) {
 
     h1 {
-        font-size: 2.7em;
-        padding-top: 50px;
+        font-size: 2.2em;
+        padding-top: 30px;
     }
 
     .page-header {
-        height: 320px;
+        height: 300px;
         padding-bottom: 0;
     }    
 
@@ -379,6 +393,6 @@ main .container {
         width: 50%;
     }
     .main-footer {
-        margin-top: 300px;
+        margin-top: 250px;
     }
 }

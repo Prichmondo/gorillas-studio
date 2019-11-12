@@ -1,25 +1,30 @@
 .stripes-home {
-    height: 530px;
+    height: 500px;
     background: linear-gradient(90deg, #031b5e,#06a0d9);
 }
 
 .stripe1-home {
-    background: linear-gradient(90deg, #022567,#055f9d);
+    height: 16%;
+    background: linear-gradient(90deg, transparent,#055f9d);
 }
 
 .stripe2-home {
+    top: auto;
+    height: 16%;
     bottom: 0;
     left: 70%;
     background: linear-gradient(90deg, transparent, rgba(91, 217, 160, 0.7));
 }
 
 .stripe3-home {
+    display: none;
     right:50%;
     bottom: 0;
     background: linear-gradient(90deg, #035190, transparent);
 }
 
 .stripe4-home {
+    display: none;
     bottom: 16%;
     left: 82%;
     background: linear-gradient(90deg, transparent,rgba(91, 217, 160, 0.4));
@@ -31,7 +36,7 @@
 
     .stripe1-home {
         height: 32%;
-        background: linear-gradient(90deg, #032e70,#044e8d);
+        background: linear-gradient(90deg, transparent,#032e70);
     }
     .stripe2-home,
     .stripe3-home {
@@ -39,8 +44,13 @@
         height: 16%;
     }
 
+    .stripe3-home,
+    .stripe4-home {
+        display: block;
+    }
+
     .stripes-home {
-        height: 500px;
+        height: 400px;
     }
     
 }

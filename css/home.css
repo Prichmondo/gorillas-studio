@@ -8,7 +8,7 @@
 .visual {
     max-width: 500px;
     width: 120%;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     position: relative;
     -webkit-transform: rotate(-45deg) skewY(33deg);
     transform: rotate(-45deg) skewY(33deg);
@@ -73,7 +73,7 @@
 @media (min-width: 768px) {
     
     .home-intro {
-        margin-bottom: 200px;
+        margin-bottom: 140px;
     }
 
     .home-intro h1 {
@@ -154,11 +154,11 @@
 
 @media (min-width: 992px) {
     .home-intro h1 {
-        padding-top: 100px;
+        padding-top: 50px;
     }
 
     .visual.home-top {
-        width: 530px;
+        width: 430px;
         max-width: none;
         left: 60%;
         top: 170px;
@@ -186,8 +186,8 @@
 
 @media (min-width: 1200px) {
     .visual.home-top {
-        width: 600px;
+        width: 500px;
         left: 55%;
-        top: 140px;
+        top: 90px;
     }
 }
