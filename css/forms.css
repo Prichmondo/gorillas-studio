@@ -1,0 +1,54 @@
+.form-control input,
+.form-control label,
+.form-control textarea
+{
+    display: block;
+    width: 100%;
+}
+
+.form-control input,
+.form-control textarea
+{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.form-control input.error,
+.form-control label.error {
+    color: rgb(229,24,58);
+}
+
+.form-control label.error {
+    font-size: 0.9em;
+    height: 30px;
+    padding-top: 3px;
+}
+
+.form-control textarea.error,
+.form-control input.error {
+    border-color: rgba(229,24,58,0.5);
+    margin-bottom: 0;
+}
+
+.form-control textarea.error::placeholder,
+.form-control input.error::placeholder {
+    color: rgb(229,24,58);
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+    
+}

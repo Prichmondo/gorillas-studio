@@ -234,12 +234,10 @@ main .container {
     top: 95%;
 }
 
-/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
     h1 {
@@ -378,11 +376,6 @@ main .container {
 
 @media (min-width: 992px) {
 
-    h1 {
-        font-size: 2.2em;
-        padding-top: 30px;
-    }
-
     .page-header {
         height: 300px;
         padding-bottom: 0;
@@ -392,6 +385,7 @@ main .container {
     .footer-section:first-child {
         width: 50%;
     }
+
     .main-footer {
         margin-top: 250px;
     }

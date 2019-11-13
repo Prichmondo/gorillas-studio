@@ -6,7 +6,6 @@ window.gs = !window.gs ? {} : window.gs;
     var mobileNav;
     var mobileMenuShadow;
     var mobileHideNavBtn;
-    var menuItems;
 
     function handleOpenMenuClick(){
         mobileMenuShadow.show();
