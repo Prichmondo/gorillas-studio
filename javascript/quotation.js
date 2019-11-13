@@ -1,10 +1,17 @@
 
 $().ready(function(){
 
-  console.log('$.validator', $.validator);
 	$.validator.setDefaults({
-		submitHandler: function() {
-			alert("submitted!");
+		submitHandler: function(form) {
+			var name = form.elements['firstName'].value;
+			$('#display-firstName').text(name);
+			$('#form-submit-modal').modal({
+				fadeDuration: 100,
+				escapeClose: true,
+				 clickClose: true,
+				 showClose: true
+			});
+			$("#quotationForm input, #quotationForm textarea").val('');
 		}
 	});
 
@@ -34,6 +41,8 @@ $().ready(function(){
 		});
 
 	});
+
+	
 	          
 
 });

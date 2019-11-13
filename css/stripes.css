@@ -20,6 +20,7 @@
     top: 0;
     left: 0;
     right: 0;
+    transition: all 0.4s ease;
 }
 
 .stripe1 {
@@ -40,9 +41,9 @@
 }
 
 .stripe4 {
-    top: calc(8%*10);
+    top: calc(8%*8);
     max-width: 15%;
-    background-color: #99c5e4;
+    background-color: rgba(153, 197, 228, 0.2);
 }
 
 .stripe5 {
@@ -57,24 +58,24 @@
 
 .stripe7 {
     left: auto;
-    top: calc(8%*10);
-    width: 24%;
-    background-color: #99c5e4;
+    top: calc(8%*8);
+    width: 20%;
+    background-color: rgba(153, 197, 228, 0.2);
 }
 
 .stripe8 {
-    right: 21%;
+    right: 24%;
     left: auto;
-    top: calc(8%*11);
-    width: 12%;
+    top: calc(8%*10);
+    width: 24%;
     background-color: #d6fdd8;
 }
 
 .stripe9 {
-    right: 9%;
+    right: 0;
     left: auto;
-    top: calc(8%*11);
-    width: 12%;
+    top: calc(8%*10);
+    width: 24%;
     background-color: #b5f2e2;
 }
 
@@ -84,7 +85,9 @@
 }
 
 @media (min-width: 768px) {
-
+    .stripe4 {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -96,9 +99,16 @@
     .stripe1 {
         height: 32%;
     }
+    .stripe4 {
+        display: block;
+    }
 }
 
 @media (min-width: 1200px) {
+    .stripe4 {
+        top: calc(8%*10);
+        background-color: #99c5e4;
+    }
     .stripe5 {
         top: calc(8%*11);
         width: 4%;
@@ -109,6 +119,29 @@
         left: 4%;
         top: calc(8%*11);
         width: 8%;
+        background-color: #b5f2e2;
+    }
+
+    .stripe7 {
+        left: auto;
+        top: calc(8%*10);
+        width: 24%;
+        background-color: #99c5e4;
+    }
+    
+    .stripe8 {
+        right: 21%;
+        left: auto;
+        top: calc(8%*11);
+        width: 12%;
+        background-color: #d6fdd8;
+    }
+    
+    .stripe9 {
+        right: 9%;
+        left: auto;
+        top: calc(8%*11);
+        width: 12%;
         background-color: #b5f2e2;
     }
     

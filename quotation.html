@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#021b5e" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/cleaner.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/core.css">
@@ -16,6 +17,7 @@
     <script src="https://kit.fontawesome.com/101da7315b.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <title>Gorillas Studio</title>
 </head>
 <body class="home">
@@ -75,6 +77,15 @@
                                 <li><i class="fas fa-check-circle"></i>Launch new features faster with Kanban methodology</li>
                             </ul>
                         </div>
+
+                        <div class="modal text-center" id="form-submit-modal">
+                            <div class="stack">
+                                <h2>Hi <span id="display-firstName"></span>, thanks for chosing us!</h2>
+                                <p> Your Request has been submitted, we will reply a soon as possible!</p>
+                                <a id="modal-close" href="#" class="btn btn-primary" rel="modal:close">Close</a>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
 
