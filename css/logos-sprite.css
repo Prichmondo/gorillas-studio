@@ -1,0 +1,38 @@
+.logo {
+    display: inline-block;
+    background-image: url('/images/logos-sprite.png');
+    background-repeat: no-repeat;
+}
+
+.logo.react {
+    width: 118px;
+    height: 105px;
+}
+
+.logo.contentful {
+    width: 89px;
+    height: 105px;
+    background-position: -118px;
+}
+
+.logo.aws {
+    width: 147px;
+    height: 105px;
+    background-position: -209px;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+    
+}

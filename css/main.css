@@ -96,7 +96,10 @@
     color: #000;
 }
 
-.link-primary {
+a.link-primary:visited,
+a.link-primary:active,
+a.link-primary:focus,
+a.link-primary {
     color: #021b5e;
     font-weight: 700;
 }
