@@ -1,10 +1,23 @@
-@media (min-width: 576px) {
+.success-case > * {
+    margin-bottom: 30px;
+}
 
+@media (min-width: 576px) {
+    .success-case > * {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 768px) {
+
     .success-case {
+        display: flex;
+        flex-direction: column;
         border-right: 1px solid #ccc;
+    }
+
+    .success-case p {
+        flex-grow: 1;
     }
     
     .success-case:last-child {
