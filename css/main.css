@@ -390,6 +390,12 @@ main .container {
     }
 
     .main-footer {
-        margin-top: 250px;
+        margin-top: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-footer {
+        margin-top: 400px;
     }
 }

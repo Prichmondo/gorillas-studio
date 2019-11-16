@@ -213,6 +213,8 @@ hr {
     margin-top: 10px;
 }
 
+
+
 @media (max-width: 767px) {
     .visible-xs { display: initial }
     .hidden-xs { display: none }

@@ -1,0 +1,21 @@
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    .success-case {
+        border-right: 1px solid #ccc;
+    }
+    
+    .success-case:last-child {
+        border-right: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+}

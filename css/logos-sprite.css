@@ -12,13 +12,44 @@
 .logo.contentful {
     width: 89px;
     height: 105px;
-    background-position: -118px;
+    background-position: -118px 0;
 }
 
 .logo.aws {
     width: 147px;
     height: 105px;
-    background-position: -209px;
+    background-position: -209px 0;
+}
+
+.logo.ding {
+    width: 103px;
+    height: 53px;
+    background-position: 0px -106px;
+}
+
+.logo.webcastle {
+    width: 131px;
+    height: 59px;
+    background-position: -103px -106px;
+}
+
+.logo.digicel {
+    width: 112px;
+    height: 35px;
+    background-position: -234px -106px;
+}
+
+.logo.cubacel {
+    width: 120px;
+    height: 25px;
+    background-position: -234px -144px;
+}
+
+.logo-container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 576px) {
