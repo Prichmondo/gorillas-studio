@@ -8,6 +8,6 @@ body, html {
     box-sizing: border-box;
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus, button:focus{
     outline: none;
 }

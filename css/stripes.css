@@ -79,11 +79,6 @@
     background-color: #b5f2e2;
 }
 
-
-@media (min-width: 576px) {
-
-}
-
 @media (min-width: 768px) {
     .stripe4 {
         display: none;
@@ -143,7 +138,6 @@
         top: calc(8%*11);
         width: 12%;
         background-color: #b5f2e2;
-    }
-    
+    }   
     
 }

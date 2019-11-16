@@ -30,8 +30,6 @@
     background: linear-gradient(90deg, transparent,rgba(91, 217, 160, 0.4));
 }
 
-@media (min-width: 576px) {}
-
 @media (min-width: 768px) {
 
     .stripe1-home {
@@ -54,7 +52,3 @@
     }
     
 }
-
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}

@@ -170,15 +170,6 @@
         font-size: 1.5em;
     }
 
-    .home-section h2, .home-section p, .home-section {
-        /* text-align: right; */
-    }
-
-    .home-section .icon {
-        /* left: auto;
-        right: -40px; */
-    }
-
     .home-section h2 {
         font-size: 1.5em;
         margin-left: 0;
