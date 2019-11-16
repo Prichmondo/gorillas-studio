@@ -226,10 +226,6 @@ main .container {
     left:0;
 }
 
-@media (min-width: 576px) {
-
-}
-
 @media (min-width: 768px) {
 
     h1 {
