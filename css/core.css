@@ -208,7 +208,7 @@ hr {
     max-width: 100%;
 }
 
-.col-header h2 {
+.heading h2, .heading h1 {
     margin-bottom: 0;
     margin-top: 10px;
 }

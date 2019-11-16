@@ -6,9 +6,6 @@
 }
 
 .visual {
-    max-width: 500px;
-    width: 120%;
-    margin: 0 auto 0 auto;
     position: relative;
     -webkit-transform: rotate(-45deg) skewY(33deg);
     transform: rotate(-45deg) skewY(33deg);
@@ -73,13 +70,13 @@
 @media (min-width: 768px) {
     
     .home-intro {
-        margin-bottom: 140px;
+        margin-bottom: 110px;
     }
 
     .home-intro h1 {
         padding-top: 60px;
         font-size: 2.4em;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         letter-spacing: initial;
     }
 
@@ -93,14 +90,11 @@
 
     .home-section h2 {
         font-weight: 700;
-        margin-left: 60px;
+        margin-right: 0;
     }
 
     .home-section .icon {
-        position: absolute;
-        left: -20px;
-        top: -18px;
-        margin: 0;
+        display: none;
     }
 
     .visual-container {
@@ -125,6 +119,14 @@
         align-items:flex-start;
         align-content:flex-start;
         flex-flow: wrap;
+    }
+
+    .visual.home-top {
+        width: 60%;
+        margin-top: calc(400px - (100%*0.30));
+        top: 0;
+        left: 65%;
+        transition: width 0.4s ease, margin 0.4s ease, left 0.4s ease;
     }
 
     .visual img {
@@ -153,15 +155,15 @@
 }
 
 @media (min-width: 992px) {
-    .home-intro h1 {
-        padding-top: 50px;
-    }
 
     .visual.home-top {
-        width: 430px;
-        max-width: none;
-        left: 60%;
-        top: 170px;
+        width: 50%;
+        left: 70%;
+        margin-top: calc(400px - (100%*0.30));
+    }
+    
+    .home-intro h1 {
+        padding-top: 50px;
     }
 
     .home-section h2 {
@@ -169,12 +171,12 @@
     }
 
     .home-section h2, .home-section p, .home-section {
-        text-align: right;
+        /* text-align: right; */
     }
 
     .home-section .icon {
-        left: auto;
-        right: -40px;
+        /* left: auto;
+        right: -40px; */
     }
 
     .home-section h2 {
@@ -186,8 +188,8 @@
 
 @media (min-width: 1200px) {
     .visual.home-top {
-        width: 500px;
-        left: 55%;
-        top: 90px;
-    }
+        width: 33%;
+        left: 60%;
+        margin-top: calc(400px - (100%*0.18));
+    }    
 }
