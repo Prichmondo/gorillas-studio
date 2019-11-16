@@ -6,6 +6,8 @@
 }
 
 .visual {
+    max-width: 500px;
+    margin: 0 auto;
     position: relative;
     -webkit-transform: rotate(-45deg) skewY(33deg);
     transform: rotate(-45deg) skewY(33deg);
@@ -61,6 +63,10 @@
     left: 15%;
 }
 
+.home-intro p {
+    color: #fff;
+}
+
 @media (min-width: 576px) {
     .visual img+img {
         margin-left: 15px;
@@ -75,8 +81,7 @@
 
     .home-intro h1 {
         padding-top: 60px;
-        font-size: 2.4em;
-        margin-bottom: 30px;
+        font-size: 2em;
         letter-spacing: initial;
     }
 
@@ -97,6 +102,10 @@
         display: none;
     }
 
+    .visual {
+        max-width: none;
+    }
+
     .visual-container {
         top: 0;
         left: 0;
@@ -111,19 +120,12 @@
     }
     
     .visual.home-top {
-        width: 400px;
         display: flex;
-        margin: 0;
-        top: 245px;
-        left: 60%;
         align-items:flex-start;
         align-content:flex-start;
         flex-flow: wrap;
-    }
-
-    .visual.home-top {
         width: 60%;
-        margin-top: calc(400px - (100%*0.30));
+        margin: calc(400px - (100%*0.33)) 0 0 0;
         top: 0;
         left: 65%;
         transition: width 0.4s ease, margin 0.4s ease, left 0.4s ease;
@@ -156,10 +158,21 @@
 
 @media (min-width: 992px) {
 
+    .home-section h2, .home-section p, .home-section {
+        text-align: right;
+    }
+
+    .home-section .icon {
+        display: block;
+        position: absolute;
+        right: -25px;
+        top: -10px;
+    }
+
     .visual.home-top {
         width: 50%;
-        left: 70%;
-        margin-top: calc(400px - (100%*0.30));
+        left: 60%;
+        margin: calc(400px - (100%*0.30)) 0 0 0;
     }
     
     .home-intro h1 {
