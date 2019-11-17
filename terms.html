@@ -13,7 +13,65 @@
 <body class="home">
     <div class="page-body">
 
-        <div id="header"></div>
+            <header class="main-header">
+                <div class="container">
+                    <div class="grid">
+                        <div class="col-xs-7 col-sm-4">
+                            <img class="img-responsive" src="images/logo-white.png" alt="Gorillas Studio">
+                        </div>
+                        <div class="col-xs-5 col-sm-8">
+                            <div class="burger-icon hidden-md hidden-lg" id="mobile-menu-button">
+                                <div class="burger-icon-el"></div>
+                                <div class="burger-icon-el"></div>
+                                <div class="burger-icon-el"></div>
+                            </div>
+        
+                            <div id="top-nav" class="nav-content">
+                                <div class="main-nav-mobile-header grid hidden-md hidden-lg">
+                                    <div class="col-xs-7">
+                                        <img class="img-responsive" src="images/logo.png" alt="Gorillas Studio">
+                                    </div>
+                                    <div class="col-xs-5">
+                                        <button id="btn-hide-nave" class="btn-icon btn-x">x</button>
+                                    </div>
+                                </div>
+                                <nav id="main-nav">
+                                    
+                                    <ul>
+                                        <li>
+                                            <a href="/">Home</a>
+                                        </li>
+                                        <li>
+                                            <span>Company</span>
+                                            <ul>
+                                                <li><a href="methodology.html">Methodology</a></li>
+                                                <li><a href="team.html">Our Team</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Solutions</span>
+                                            <ul>
+                                                <li><a href="success-cases.html">Success Cases</a></li>
+                                                <li><a href="technology.html">Technology</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Resources</span>
+                                            <ul>
+                                                <li><a href="contact.html">Contacts</a></li>
+                                                <li><a href="terms.html">Privacy and Terms</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>    
+                            </div>
+                            <div id="top-mobile-menu-shadow" class="cover-shadow"></div>    
+        
+                        </div>
+                        
+                    </div>
+                </div>
+            </header>
 
         <main>
             <div class="container">
@@ -41,11 +99,11 @@
                     
                     <p>
                         <ul>
-                            <li><a href="#overview">Overview</a></li>
-                            <li><a href="#personal-data-collect">Personal Data We Collect</a></li>
-                            <li><a href="#personal-data-usage">How We Use Personal Data</a></li>
-                            <li><a href="#personal-data-disclosure">How We Disclose Personal Data</a></li>
-                            <li><a href="#rights-and-choices">Your Rights and Choices</a></li>
+                            <li><a class="link-primary" href="#overview">Overview</a></li>
+                            <li><a class="link-primary" href="#personal-data-collect">Personal Data We Collect</a></li>
+                            <li><a class="link-primary" href="#personal-data-usage">How We Use Personal Data</a></li>
+                            <li><a class="link-primary" href="#personal-data-disclosure">How We Disclose Personal Data</a></li>
+                            <li><a class="link-primary" href="#rights-and-choices">Your Rights and Choices</a></li>
                         </ul>
                     </p>
                     
@@ -210,7 +268,54 @@
         
     </div>
 
-    <div id="footer"></div>
+    <footer class="main-footer">
+        <div class="footer-stripe"></div>
+        <div class="footer-wrapper">
+
+            <div class="container no-gutter-xs no-gutter-sm">
+    
+                <div class="footer-section">
+    
+                    <nav>
+                        <ul class="grid nav-root">
+                            <li class="col-xs-6 col-sm-3">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="col-xs-6 col-sm-3">
+                                <span>Company</span>
+                                <ul>
+                                    <li><a href="methodology.html">Methodology</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-xs-6 col-sm-3">
+                                <span>Solutions</span>
+                                <ul>
+                                    <li><a href="success-cases.html">Success Cases</a></li>
+                                    <li><a href="technology.html">Technology</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-xs-6 col-sm-3">
+                                <span>Resources</span>
+                                <ul>
+                                    <li><a href="contact.html">Contacts</a></li>
+                                    <li><a href="terms.html">Privacy and Terms</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                </div>
+                
+                <div class="footer-section">
+                    <div>
+                        <img class="logo-gray" src="images/logo.png" alt="Gorillas Studio" />
+                        <small>Copyright © 2019 Gorillas Studio Inc. All rights reserved</small>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </footer>
 
     <div class="stripes">
         <span class="stripe stripe1"></span>
@@ -224,8 +329,6 @@
         <span class="stripe stripe9"></span>
     </div>
     <script type="text/javascript" src="javascript/navigation.js"></script>
-    <script type="text/javascript" src="javascript/template.js"></script>
-    <script type="text/javascript" src="javascript/main.js"></script>
     <script type="text/javascript" src="javascript/terms.js"></script>
 </body>
 </html>

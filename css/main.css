@@ -54,6 +54,10 @@
     right: -100%;
 }
 
+#top-nav.open+#top-mobile-menu-shadow {
+    display: block;
+}
+
 .main-header .nav-content.open {
     left: 5px;
     right: 5px;
@@ -236,6 +240,11 @@ main .container {
     /**********************************************************************/
     /********************************* NAV ********************************/
     /**********************************************************************/
+
+    #top-nav.open+#top-mobile-menu-shadow {
+        display: none;
+    }
+
     .main-header .nav-content {
         position: relative;
         background-color: transparent;

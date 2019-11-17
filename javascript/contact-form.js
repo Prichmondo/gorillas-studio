@@ -39,11 +39,7 @@ $().ready(function(){
 				text: "Please enter a description"
 			}
 		});
-
-	});
-
-	
-	          
+	});    
 
 });
 

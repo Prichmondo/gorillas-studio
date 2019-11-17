@@ -1,37 +1,27 @@
-window.gs = !window.gs ? {} : window.gs;
+var mobileMenuBtn;
+var mobileNav;
+var mobileMenuShadow;
+var mobileHideNavBtn;
 
-(function(gs, window, document, $){
+function handleOpenMenuClick(){
+    mobileNav.addClass('open');
+}
 
-    var mobileMenuBtn;
-    var mobileNav;
-    var mobileMenuShadow;
-    var mobileHideNavBtn;
+function handleHideMenuClick(){
+    mobileNav.removeClass('open');
+}
 
-    function handleOpenMenuClick(){
-        mobileMenuShadow.show();
-        mobileNav.addClass('open');
-    }
+function initNavigation(){
+    
+    mobileMenuBtn = $("#mobile-menu-button");
+    mobileNav = $("#top-nav");
+    mobileMenuShadow = $("#top-mobile-menu-shadow");
+    mobileHideNavBtn = $('#btn-hide-nave');
 
-    function handleHideMenuClick(){
-        mobileMenuShadow.hide();
-        mobileNav.removeClass('open');
-    }
+    mobileMenuBtn.click(handleOpenMenuClick);
+    mobileHideNavBtn.click(handleHideMenuClick);
+}
 
-    function initNavigation(){
-        
-        mobileMenuBtn = $("#mobile-menu-button");
-        mobileNav = $("#top-nav");
-        mobileMenuShadow = $("#top-mobile-menu-shadow");
-        mobileHideNavBtn = $('#btn-hide-nave');
-
-        mobileMenuBtn.click(handleOpenMenuClick);
-        mobileHideNavBtn.click(handleHideMenuClick);
-    }
-
-    gs.navigation = {
-        init: initNavigation
-    };
-
-})(gs, window, document, $);
-
-  
+$().ready(function(){
+    initNavigation();
+});
